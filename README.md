@@ -233,3 +233,18 @@ Promise.all([checkLogin(),getUseInfo()]).then([res1,res2] =>{})
 
 
 ### header, footer, bread
+
+### setup express
+
+
+后台服务起也启动， 并且通过
+proxyTable: {
+    ’/goods‘:{
+        target:'http://localhost:3000'
+    }
+}中设置，控制跨域访问
+
+
+###pagination on server side
+let skip = (page - 1) * pageSize
+let goodsModel = Goods.find(params).skip(skip).limit(pageSize)
