@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+Vue2 started using **visual dom**
+
 ## Build Setup
 
 ``` bash
@@ -32,7 +34,7 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## Building Notes
 
-###webpack 
+### webpack 
 
 1. 重点关注build/webpack.baseconfig.js and  config/index.js
 
